@@ -7,6 +7,7 @@ const inputText = localStorage.getItem('homebrewery-new');
 		  {term: "\\\\pagebreak", text: "\\page"},
 		  {term: "======", text: "\\page"},
 		  {term: "\\\\columnbreak", text: "\\column"},
+		  {term: ".phb", text: ".page"}
 	  ];
 	  var outputText = inputText;
 	  for (const replacement of replacementList){
