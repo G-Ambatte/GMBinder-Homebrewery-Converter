@@ -6,9 +6,9 @@ This is a quick & dirty project to convert GMBinder source to Homebrewery source
 
 #### Installation
 
-1. Create a new bookmark in your browser. Chrome is recommended, as it is the only browser Homebrewery officially supports.
+1. Create a new bookmark in your browser. Chrome is strongly recommended, as it is the only browser Homebrewery officially supports. It is likely that you will get unexpected results with other browsers.
 
-2. Give it whatever name you like - "GMB>HB", for example.
+2. Give the bookmark whatever name you like - "GMB>HB", for example.
 
 3. Copy the contents of `bookmarklet.js` into the URL field.
 
