@@ -10,7 +10,7 @@ This is a quick & dirty project to convert GMBinder source to Homebrewery source
 
 2. Give the bookmark whatever name you like - "GMB>HB", for example.
 
-3. Copy the contents of `bookmarklet.js` into the URL field.
+3. Copy the contents of `src/bookmarklet.js` into the URL field.
 
 4. Click "Save".
 
