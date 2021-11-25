@@ -2,6 +2,11 @@
 
 ## Changelog
 
+#### v1.0.2 25/11/2021
+
+Homebrewery would sometimes struggle to process large GMBinder brews prior to processing. Changed to process the source text from an input `prompt` text box, rather than via the Homebrewery local storage.
+
+
 #### v1.0.1 25/11/2021
 
 Minor update - include `.phb` conversion to `.page`

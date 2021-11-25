@@ -18,12 +18,10 @@ This is a quick & dirty project to convert GMBinder source to Homebrewery source
 
 1. Navigate to https://homebrewery.naturalcrit.com/new.
 
-2. Paste the GM Binder source into the editor. It may look incorrect at this stage.
+2. Click the bookmark created during the installation process.
 
-3. Click the bookmark created during the installation process.
+3. Paste the GMBinder source text into the prompt window that appears. Click OK to start the conversion process.
 
-4. A confirmation window containing the first part of the GM Binder source will appear. Click OK to begin the conversion process.
+4. On completion, the page will reload, and the converted project should now be visible in the editor.
 
-5. The page will reload, and the converted project should now be visible in the editor.
-
-6. Click "SAVE" in the Homebrewery editor to commit the project to your Homebrewery account.
+5. Click "SAVE" in the Homebrewery editor to commit the project to your Homebrewery account.
