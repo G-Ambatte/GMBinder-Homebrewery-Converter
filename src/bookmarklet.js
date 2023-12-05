@@ -8,8 +8,8 @@ if(location.href=='https://homebrewery.naturalcrit.com/new'){
 		  {term: "======", text: "\\page"},
 		  {term: "\\\\columnbreak", text: "\\column"},
 		  {term: "(?:\\n)(>[\\s\\S]*?)(?:[^ ][^ ]\\n[^>])", text: "{{note\n$1\n}}\n", flags: "gi"},
-		  {term: "(?:\\n)(___\\n{{note\\n)", text: "{{monster,frame\n", flags: "gi"},
-		  {term: "(?:\\n)(___\\n{{monster,frame\\n)", text: "{{monster,frame,wide\n", flags: "gi"},
+		  {term: "(___[\\r\\n]+{{note)", text: "{{monster,frame", flags: "gi"},
+		  {term: "(___[\\r\\n]+{{monster,frame)", text: "{{monster,frame,wide", flags: "gi"},
 		  {term: "^>\\s*?-\\s*", text: ""},
 		  {term: "^(>\\s*)", text: ""},
 		  {term: "^(\\*\\*.+\\*\\*)(.*)", text: "$1 :: $2"},
@@ -22,6 +22,6 @@ if(location.href=='https://homebrewery.naturalcrit.com/new'){
 	  localStorage.setItem('homebrewery-new', outputText);
 	  localStorage.setItem('homebrewery-new-style', '.page {\n  font-size: 0.317cm;\n  padding: 1cm 1.7cm 1.5cm;\n}');
 	  localStorage.setItem('homebrewery-new-meta','{"renderer":"V3"}');
-	  location.reload(); 	  
+	  location.reload();
 	  };
 })();
