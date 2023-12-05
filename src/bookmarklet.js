@@ -16,9 +16,6 @@ if(location.href=='https://homebrewery.naturalcrit.com/new'){
 	  var outputText = '\n' + inputText + '\n';
 	  for (const replacement of replacementList){
 		  outputText = outputText.replace(new RegExp(replacement.term, replacement.flags || 'gim'), replacement.text);
-		  console.log(replacement.term);
-		  console.log(replacement.flags || 'gim');
-		  console.log(outputText);
 	  }
 	  localStorage.setItem('homebrewery-new', outputText);
 	  localStorage.setItem('homebrewery-new-style', '.page { font-size: 0.317cm; }');
