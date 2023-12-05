@@ -7,13 +7,15 @@ if(location.href=='https://homebrewery.naturalcrit.com/new'){
 		  {term: "\\\\pagebreak", text: "\\page"},
 		  {term: "======", text: "\\page"},
 		  {term: "\\\\columnbreak", text: "\\column"},
-		  {term: "(\\n>[\\s\\S]*?)(?:[^ ][^ ]\\n[^>])", text: "\n{{monster,frame$1\n}}\n", flags: "gi"},
+		  {term: "(?:\\n)(___\\n___\\n>[\\s\\S]*?)(?:[^ ][^ ]\\n[^>])", text: "\n{{monster,frame,wide\n$1\n}}\n", flags: "gi"},
+		  {term: "(?:\\n)(___\\n>[\\s\\S]*?)(?:[^ ][^ ]\\n[^>])", text: "\n{{monster,frame\n$1\n}}\n", flags: "gi"},
+		  {term: "(?:\\n)(>[\\s\\S]*?)(?:[^ ][^ ]\\n[^>])", text: "\n{{note\n$1\n}}\n", flags: "gi"},
 		  {term: "^>\\s*?-\\s*", text: ""},
 		  {term: "^(>\\s*)", text: ""},
 		  {term: "^(\\*\\*.+\\*\\*)(.*)", text: "$1 :: $2"},
 		  {term: ".phb", text: ".page"}
 	  ];
-	  var outputText = '\n' + inputText + '\n';
+	  var outputText = '\n' + inputText + '\n\n';
 	  for (const replacement of replacementList){
 		  outputText = outputText.replace(new RegExp(replacement.term, replacement.flags || 'gim'), replacement.text);
 	  }
