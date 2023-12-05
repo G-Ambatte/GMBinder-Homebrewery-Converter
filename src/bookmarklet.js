@@ -8,7 +8,7 @@ if(location.href=='https://homebrewery.naturalcrit.com/new'){
 		  {term: "======", text: "\\page"},
 		  {term: "\\\\columnbreak", text: "\\column"},
 		  {term: "(?:\\n)(>[\\s\\S]*?)(?:[^ ][^ ]\\n[^>])", text: "{{note\n$1\n}}\n", flags: "gi"},
-		  {term: "(?:\\n)(___\\n{{note\\n)", text: "{{monster,frame\n", flags: "gim"},
+		  {term: "(?:\\n)(___\\n{{note\\n)", text: "{{monster,frame\n", flags: "gi"},
 		  {term: "(?:\\n)(___\\n{{monster,frame\\n)", text: "{{monster,frame,wide\n", flags: "gi"},
 		  {term: "^>\\s*?-\\s*", text: ""},
 		  {term: "^(>\\s*)", text: ""},
