@@ -2,6 +2,14 @@
 
 ## Changelog
 
+#### v1.0.4 29/05/2025
+
+Note block conversion was skipping the last two non-space characters inside the block. I cannot find any reason for this to be the case, so I have altered the regex to stop that from occurring.
+
+#### v1.0.3 ???
+
+Apparently I forgot to record notes for v1.03. ¯\_(ツ)_/¯
+
 #### v1.0.2 25/11/2021
 
 Homebrewery would sometimes struggle to process large GMBinder brews prior to processing. Changed to process the source text from an input `prompt` text box, rather than via the Homebrewery local storage.
