@@ -8,7 +8,7 @@ Note block conversion was skipping the last two non-space characters inside the 
 
 #### v1.0.3 ???
 
-Apparently I forgot to record notes for v1.03. ¯\_(ツ)_/¯
+Apparently I forgot to record notes for v1.03. ¯\\_(ツ)_/¯
 
 #### v1.0.2 25/11/2021
 
